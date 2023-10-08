@@ -7,10 +7,18 @@ import { buttonVariants } from "@/components/ui/Button";
 import SignInButton from "@/components/SignInButton";
 import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
+import { authOptions } from "@/lib/auth";
 
 const Navbar = async () => {
   console.log(buttonVariants);
-  const session = await getServerSession();
+  // const session = await getServerSession(authOptions);
+  // since I don't have any id so.
+  const session = {
+    id: 1,
+    name: "Usama Rehman Yousaf",
+    email: "decryptme938@gmail.com",
+    picture: "https://picsum.photos/seed/picsum/200/300",
+  };
   return (
     <div className="fixed backdrop-blur-sm bg-white/75 dark:bg-slate-900 z-50 top-0 left-0 right-0 h-20 border-b border-slate-300 dark:border-slate-700 shadow-sm flex items-center justify-between">
       {/* ==============================|| BUTTON ||============================== */}
