@@ -7,14 +7,14 @@ import { buttonVariants } from "@/components/ui/Button";
 import SignInButton from "@/components/SignInButton";
 import SignOutButton from "@/components/SignOutButton";
 import ThemeToggle from "@/components/ThemeToggle";
-import { authOptions } from "@/lib/auth";
+// import { authOptions } from "@/lib/auth";
 
 const Navbar = async () => {
   console.log(buttonVariants);
   // const session = await getServerSession(authOptions);
   // since I don't have any id so.
   const session = {
-    id: 1,
+    id: "1",
     name: "Usama Rehman Yousaf",
     email: "decryptme938@gmail.com",
     picture: "https://picsum.photos/seed/picsum/200/300",
